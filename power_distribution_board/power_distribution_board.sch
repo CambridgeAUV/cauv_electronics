@@ -351,8 +351,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 5550 6700 5550
 Wire Notes Line
-	6950 7800 6950 4800
-Wire Notes Line
 	500  4800 11200 4800
 Text Notes 6100 7750 0    60   ~ 0
 Battery Switching
@@ -532,4 +530,19 @@ Text Label 9900 5650 0    60   ~ 0
 PWR_ENABLE
 Text Notes 10750 6450 0    60   ~ 0
 Killswitch
+$Comp
+L EHHD015A0A U?
+U 1 1 597F4834
+P 3800 2650
+F 0 "U?" H 3500 3150 50  0000 C CNN
+F 1 "EHHD015A0A" H 3700 2150 50  0000 C CNN
+F 2 "" H 3500 2600 50  0001 C CNN
+F 3 "" H 3500 2600 50  0001 C CNN
+	1    3800 2650
+	1    0    0    -1  
+$EndComp
+Text Label 6700 5550 0    60   ~ 0
+PWR_SWITCHED
+Wire Notes Line
+	7700 4800 7700 6500
 $EndSCHEMATC
