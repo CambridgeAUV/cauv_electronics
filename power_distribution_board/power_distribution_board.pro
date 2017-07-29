@@ -1,4 +1,4 @@
-update=Sat 29 Jul 2017 13:46:50 BST
+update=Sat 29 Jul 2017 14:01:51 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,3 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=agg-kicad
+LibName31=cauv_lib
