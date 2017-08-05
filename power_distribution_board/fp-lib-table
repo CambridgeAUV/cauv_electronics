@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name cauv_lib)(type KiCad)(uri /home/elliot/cauv/cauv_electronics/cauv_lib/footprints.pretty)(options "")(descr ""))
+  (lib (name agg_lib)(type KiCad)(uri ./agg_lib/agg.pretty)(options "")(descr ""))
+)
