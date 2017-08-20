@@ -1,4 +1,4 @@
-update=14/08/2017 20:38:45
+update=Sat 19 Aug 2017 10:52:26 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../cauv_lib;../agg_lib
+LibDir=../../cauv_lib;../../agg_lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,3 +60,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/Andy/Documents/Electronics/cauv_electronics/cauv_lib/cauv_lib
 LibName31=C:/Users/Andy/Documents/Electronics/cauv_electronics/agg_lib/agg-kicad
+LibName32=/home/andrew/Documents/CAUV/cauv_electronics/cauv_lib/cauv_lib
+LibName33=/home/andrew/Documents/CAUV/cauv_electronics/agg_lib/agg-kicad
