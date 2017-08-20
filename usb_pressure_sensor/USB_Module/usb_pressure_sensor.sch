@@ -48,266 +48,440 @@ $EndDescr
 $Comp
 L STM32F0xxFxPx IC1
 U 1 1 5990B64E
-P 7000 1900
-F 0 "IC1" H 6500 2600 50  0000 L CNN
-F 1 "STM32F042F6P6" H 6500 1200 50  0000 L CNN
-F 2 "agg:TSSOP-20" H 6500 1100 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6500 1000 50  0001 L CNN
-F 4 "2469549" H 6500 900 50  0001 L CNN "Farnell"
-	1    7000 1900
+P 9150 1850
+F 0 "IC1" H 8650 2550 50  0000 L CNN
+F 1 "STM32F042F6P6" H 8650 1150 50  0000 L CNN
+F 2 "agg:TSSOP-20" H 8650 1050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 8650 950 50  0001 L CNN
+F 4 "2469549" H 8650 850 50  0001 L CNN "Farnell"
+	1    9150 1850
 	1    0    0    -1  
 $EndComp
-Text Label 6150 1300 0    60   ~ 0
+Text Label 8300 1250 0    60   ~ 0
 3v3
-Text Label 6150 1400 0    60   ~ 0
+Text Label 8300 1350 0    60   ~ 0
 3v3
-Text Label 6150 1500 0    60   ~ 0
+Text Label 8300 1450 0    60   ~ 0
 GND
-Text Label 6150 1700 0    60   ~ 0
+Text Label 8300 1650 0    60   ~ 0
 NRST
-NoConn ~ 7600 1300
-NoConn ~ 7600 1400
-NoConn ~ 7600 1500
-NoConn ~ 7600 1600
-NoConn ~ 7600 1700
-Text Label 7650 2400 0    60   ~ 0
+NoConn ~ 9750 1250
+NoConn ~ 9750 1350
+NoConn ~ 9750 1450
+NoConn ~ 9750 1550
+NoConn ~ 9750 1650
+Text Label 9800 2350 0    60   ~ 0
 SWDIO
-Text Label 7650 2500 0    60   ~ 0
+Text Label 9800 2450 0    60   ~ 0
 SWDCLK
-Text Label 7650 2200 0    60   ~ 0
+Text Label 9800 2150 0    60   ~ 0
 USB_DM
-Text Label 7650 2300 0    60   ~ 0
+Text Label 9800 2250 0    60   ~ 0
 USB_DP
-Text Label 7650 1800 0    60   ~ 0
-SPI_SCLK
-Text Label 7650 1900 0    60   ~ 0
-SPI_MISO
-Text Label 7650 2000 0    60   ~ 0
-SPI_MOSI
-NoConn ~ 6400 2200
-NoConn ~ 6400 2300
-NoConn ~ 6400 1900
+Text Label 9800 1750 0    60   ~ 0
+SCLK
+Text Label 9800 1850 0    60   ~ 0
+DOUT
+Text Label 9800 1950 0    60   ~ 0
+DIN
+NoConn ~ 8550 2150
+NoConn ~ 8550 2250
+NoConn ~ 8550 1850
 $Comp
 L SWD_TC P1
 U 1 1 59920B13
-P 7000 3250
-F 0 "P1" H 6700 3450 50  0000 L CNN
-F 1 "SWD_TC" H 6700 3050 50  0000 L CNN
-F 2 "footprints:SWD_CONN" H 6700 2950 50  0001 L CNN
-F 3 "" H 6600 3350 50  0001 C CNN
-	1    7000 3250
+P 2400 4400
+F 0 "P1" H 2100 4600 50  0000 L CNN
+F 1 "SWD_TC" H 2100 4200 50  0000 L CNN
+F 2 "footprints:SWD_CONN" H 2100 4100 50  0001 L CNN
+F 3 "" H 2000 4500 50  0001 C CNN
+	1    2400 4400
 	1    0    0    -1  
 $EndComp
-Text Label 6600 3150 2    60   ~ 0
+Text Label 2000 4300 2    60   ~ 0
 3v3
-Text Label 6600 3250 2    60   ~ 0
+Text Label 2000 4400 2    60   ~ 0
 NRST
-Text Label 6600 3350 2    60   ~ 0
+Text Label 2000 4500 2    60   ~ 0
 GND
-Text Label 7400 3150 0    60   ~ 0
+Text Label 2800 4300 0    60   ~ 0
 SWDIO
-Text Label 7400 3250 0    60   ~ 0
+Text Label 2800 4400 0    60   ~ 0
 SWDCLK
-NoConn ~ 7400 3350
+NoConn ~ 2800 4500
 $Comp
 L MICRO_USB U1
 U 1 1 59922B96
-P 3350 3700
-F 0 "U1" H 3300 4000 60  0000 C CNN
-F 1 "MICRO_USB" H 3500 3400 60  0000 C CNN
-F 2 "agg:MICROUSB_MOLEX_47589-0001" H 3350 3700 60  0001 C CNN
-F 3 "" H 3350 3700 60  0001 C CNN
-	1    3350 3700
+P 2100 3100
+F 0 "U1" H 2050 3400 60  0000 C CNN
+F 1 "MICRO_USB" H 2250 2800 60  0000 C CNN
+F 2 "agg:MICROUSB_MOLEX_47589-0001" H 2100 3100 60  0001 C CNN
+F 3 "" H 2100 3100 60  0001 C CNN
+	1    2100 3100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3650 3800
-Text Label 3700 3900 0    60   ~ 0
+NoConn ~ 2400 3200
+Text Label 2650 3300 0    60   ~ 0
 GND
-Text Label 3950 3600 0    60   ~ 0
+Text Label 2750 3000 0    60   ~ 0
 USB_DM
-Text Label 3950 3700 0    60   ~ 0
+Text Label 2750 3100 0    60   ~ 0
 USB_DP
 $Comp
 L R R1
 U 1 1 599255BF
-P 3800 3600
-F 0 "R1" V 3880 3600 50  0000 C CNN
-F 1 "22" V 3800 3600 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3730 3600 50  0001 C CNN
-F 3 "" H 3800 3600 50  0001 C CNN
-	1    3800 3600
+P 2550 3000
+F 0 "R1" V 2630 3000 50  0000 C CNN
+F 1 "22" V 2550 3000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2480 3000 50  0001 C CNN
+F 3 "" H 2550 3000 50  0001 C CNN
+	1    2550 3000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R2
 U 1 1 59925636
-P 3800 3700
-F 0 "R2" V 3880 3700 50  0000 C CNN
-F 1 "22" V 3800 3700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3730 3700 50  0001 C CNN
-F 3 "" H 3800 3700 50  0001 C CNN
-	1    3800 3700
+P 2550 3100
+F 0 "R2" V 2630 3100 50  0000 C CNN
+F 1 "22" V 2550 3100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2480 3100 50  0001 C CNN
+F 3 "" H 2550 3100 50  0001 C CNN
+	1    2550 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L CONN_02x03 J2
 U 1 1 599492A4
-P 9200 2050
-F 0 "J2" H 9100 2150 50  0000 L CNN
-F 1 "MODULE_BRIDGE" H 9100 1750 50  0000 L CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 9200 2050 50  0001 C CNN
-F 3 "" H 9200 2050 50  0001 C CNN
-	1    9200 2050
+P 2450 5550
+F 0 "J2" H 2350 5650 50  0000 L CNN
+F 1 "MODULE_BRIDGE" H 2350 5250 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm" H 2450 5550 50  0001 C CNN
+F 3 "" H 2450 5550 50  0001 C CNN
+	1    2450 5550
 	1    0    0    -1  
 $EndComp
-Text Label 8800 2050 0    60   ~ 0
+Text Label 2050 5550 0    60   ~ 0
 3v3
-Text Label 8550 2150 0    60   ~ 0
-SPI_SCLK
-Text Label 8550 2250 0    60   ~ 0
-SPI_MOSI
-Text Label 9350 2050 0    60   ~ 0
+Text Label 2550 5550 0    60   ~ 0
 GND
-Text Label 9350 2150 0    60   ~ 0
-SPI_MISO
-NoConn ~ 9300 2250
 $Comp
 L SWITCH_SPST SW1
 U 1 1 599811CC
-P 5750 2000
-F 0 "SW1" H 5750 2150 50  0000 C CNN
-F 1 "SWITCH_SPST" H 5750 1900 50  0000 C CNN
-F 2 "" H 5750 2000 50  0001 C CNN
-F 3 "" H 5750 2000 50  0001 C CNN
-	1    5750 2000
+P 7900 1950
+F 0 "SW1" H 7900 2100 50  0000 C CNN
+F 1 "SWITCH_SPST" H 7900 1850 50  0000 C CNN
+F 2 "" H 7900 1950 50  0001 C CNN
+F 3 "" H 7900 1950 50  0001 C CNN
+	1    7900 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R3
 U 1 1 59981239
-P 6100 2300
-F 0 "R3" V 6180 2300 50  0000 C CNN
-F 1 "10k" V 6100 2300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 2300 50  0001 C CNN
-F 3 "" H 6100 2300 50  0001 C CNN
-	1    6100 2300
+P 8250 2250
+F 0 "R3" V 8330 2250 50  0000 C CNN
+F 1 "10k" V 8250 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8180 2250 50  0001 C CNN
+F 3 "" H 8250 2250 50  0001 C CNN
+	1    8250 2250
 	1    0    0    -1  
 $EndComp
-Text Label 6100 2600 0    60   ~ 0
+Text Label 8250 2550 0    60   ~ 0
 GND
-Text Label 5400 2000 0    60   ~ 0
+Text Label 7550 1950 0    60   ~ 0
 3v3
 $Comp
 L MCP1700 IC2
 U 1 1 59982B20
-P 3550 2400
-F 0 "IC2" H 3350 2500 50  0000 L CNN
-F 1 "MCP1700" H 3350 2200 50  0000 L CNN
-F 2 "agg:SOT-23" H 3350 2100 50  0001 L CNN
-F 3 "http://www.farnell.com/datasheets/1784514.pdf" H 3350 2000 50  0001 L CNN
-F 4 "1296592" H 3350 1900 50  0001 L CNN "Farnell"
-	1    3550 2400
+P 2650 1250
+F 0 "IC2" H 2450 1350 50  0000 L CNN
+F 1 "MCP1700" H 2450 1050 50  0000 L CNN
+F 2 "agg:SOT-23" H 2450 950 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/1784514.pdf" H 2450 850 50  0001 L CNN
+F 4 "1296592" H 2450 750 50  0001 L CNN "Farnell"
+	1    2650 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C2
 U 1 1 59982B76
-P 4050 2600
-F 0 "C2" H 4075 2700 50  0000 L CNN
-F 1 "1u" H 4075 2500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4088 2450 50  0001 C CNN
-F 3 "" H 4050 2600 50  0001 C CNN
-	1    4050 2600
+P 3150 1450
+F 0 "C2" H 3175 1550 50  0000 L CNN
+F 1 "1u" H 3175 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3188 1300 50  0001 C CNN
+F 3 "" H 3150 1450 50  0001 C CNN
+	1    3150 1450
 	1    0    0    -1  
 $EndComp
-Text Label 4050 2900 0    60   ~ 0
+Text Label 3150 1750 0    60   ~ 0
 GND
-Text Notes 4250 2700 0    60   ~ 0
+Text Notes 3350 1550 0    60   ~ 0
 Capacitor should be as \nclose as possible to VOUT pin\n
-Text Label 3250 2750 0    60   ~ 0
+Text Label 2350 1600 0    60   ~ 0
 GND
 $Comp
 L C C1
 U 1 1 5998353C
-P 3000 2550
-F 0 "C1" H 3025 2650 50  0000 L CNN
-F 1 "1u" H 3025 2450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3038 2400 50  0001 C CNN
-F 3 "" H 3000 2550 50  0001 C CNN
-	1    3000 2550
+P 2100 1400
+F 0 "C1" H 2125 1500 50  0000 L CNN
+F 1 "1u" H 2125 1300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2138 1250 50  0001 C CNN
+F 3 "" H 2100 1400 50  0001 C CNN
+	1    2100 1400
 	1    0    0    -1  
 $EndComp
-Text Label 2600 2400 0    60   ~ 0
+Text Label 1700 1250 0    60   ~ 0
 5v
-Text Label 4250 2400 0    60   ~ 0
+Text Label 3350 1250 0    60   ~ 0
 3v3
 Wire Wire Line
-	6150 1500 6400 1500
+	8300 1450 8550 1450
 Wire Wire Line
-	6400 1300 6150 1300
+	8550 1250 8300 1250
 Wire Wire Line
-	6400 1400 6150 1400
+	8550 1350 8300 1350
 Wire Wire Line
-	6400 1700 6150 1700
+	8550 1650 8300 1650
 Wire Wire Line
-	7600 1800 8000 1800
+	9750 1750 9800 1750
 Wire Wire Line
-	7600 1900 8000 1900
+	9750 1850 9800 1850
 Wire Wire Line
-	7600 2000 8000 2000
+	9750 1950 9800 1950
 Wire Wire Line
-	7600 2400 8000 2400
+	9750 2350 9800 2350
 Wire Wire Line
-	7600 2500 8000 2500
+	9750 2450 9800 2450
 Wire Wire Line
-	7600 2200 8000 2200
+	9750 2150 9800 2150
 Wire Wire Line
-	7600 2300 8000 2300
+	9750 2250 9800 2250
 Wire Wire Line
-	3650 3900 3900 3900
+	2400 3300 2650 3300
 Wire Wire Line
-	3950 3600 4100 3600
+	2700 3000 2750 3000
 Wire Wire Line
-	3950 3700 4100 3700
+	2700 3100 2750 3100
 Wire Wire Line
-	9300 2150 9750 2150
+	2550 5550 2550 5550
 Wire Wire Line
-	9300 2050 9500 2050
+	2250 5550 2050 5550
 Wire Wire Line
-	9000 2050 8800 2050
+	8000 1950 8550 1950
 Wire Wire Line
-	9000 2150 8550 2150
+	8250 1950 8250 2100
+Connection ~ 8250 1950
 Wire Wire Line
-	9000 2250 8550 2250
+	8250 2400 8250 2550
 Wire Wire Line
-	5850 2000 6400 2000
+	7800 1950 7550 1950
 Wire Wire Line
-	6100 2000 6100 2150
-Connection ~ 6100 2000
+	3050 1250 3350 1250
 Wire Wire Line
-	6100 2450 6100 2600
+	3150 1250 3150 1300
 Wire Wire Line
-	5650 2000 5400 2000
+	3150 1600 3150 1750
 Wire Wire Line
-	3950 2400 4250 2400
+	2350 1350 2350 1600
 Wire Wire Line
-	4050 2400 4050 2450
+	1700 1250 2350 1250
 Wire Wire Line
-	4050 2750 4050 2900
+	2100 1550 2100 1600
 Wire Wire Line
-	3250 2500 3250 2750
+	2100 1600 2350 1600
+Connection ~ 2100 1250
+Connection ~ 3150 1250
 Wire Wire Line
-	2600 2400 3250 2400
+	2400 2900 2400 2850
 Wire Wire Line
-	3000 2700 3000 2750
-Wire Wire Line
-	3000 2750 3250 2750
-Connection ~ 3000 2400
-Connection ~ 4050 2400
-Wire Wire Line
-	3650 3500 3650 3450
-Wire Wire Line
-	3650 3450 4000 3450
-Text Label 4000 3450 0    60   ~ 0
+	2400 2850 2750 2850
+Text Label 2750 2850 0    60   ~ 0
 5v
+$Comp
+L SN74LVC1GX04 U2
+U 1 1 599960D4
+P 8500 4600
+F 0 "U2" H 8350 4800 60  0000 C CNN
+F 1 "SN74LVC1GX04" H 8650 4400 60  0000 C CNN
+F 2 "" H 8500 4500 60  0001 C CNN
+F 3 "" H 8500 4500 60  0001 C CNN
+	1    8500 4600
+	1    0    0    -1  
+$EndComp
+Text Label 8100 4550 0    60   ~ 0
+3v3
+Text Label 8900 4500 0    60   ~ 0
+GND
+Wire Notes Line
+	11200 6200 7250 6200
+Wire Notes Line
+	7250 6200 7250 3750
+Wire Notes Line
+	7250 3750 11200 3750
+Wire Notes Line
+	11200 3750 11200 6200
+Text Notes 7450 3900 0    60   ~ 0
+Crystal Oscillator
+$Comp
+L Crystal Y1
+U 1 1 59997398
+P 9750 5150
+F 0 "Y1" H 9750 5300 50  0000 C CNN
+F 1 "Crystal 32.768kHz" H 9750 5000 50  0000 C CNN
+F 2 "" H 9750 5150 50  0001 C CNN
+F 3 "" H 9750 5150 50  0001 C CNN
+	1    9750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 599981DE
+P 9750 4800
+F 0 "R4" V 9830 4800 50  0000 C CNN
+F 1 "2.2M" V 9750 4800 50  0000 C CNN
+F 2 "" V 9680 4800 50  0001 C CNN
+F 3 "" H 9750 4800 50  0001 C CNN
+	1    9750 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59998242
+P 10100 4950
+F 0 "R5" V 10180 4950 50  0000 C CNN
+F 1 "180k" V 10100 4950 50  0000 C CNN
+F 2 "" V 10030 4950 50  0001 C CNN
+F 3 "" H 10100 4950 50  0001 C CNN
+	1    10100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5150 10100 5150
+Wire Wire Line
+	10100 5100 10100 5400
+Wire Wire Line
+	9900 4800 10100 4800
+Wire Wire Line
+	9600 4800 9350 4800
+Wire Wire Line
+	9350 4600 9350 5400
+Wire Wire Line
+	9350 5150 9600 5150
+Wire Wire Line
+	8900 4600 9350 4600
+Connection ~ 9350 4800
+Wire Wire Line
+	8900 4700 10100 4700
+Wire Wire Line
+	10100 4700 10100 4800
+$Comp
+L C C4
+U 1 1 59998D9B
+P 10100 5550
+F 0 "C4" H 10125 5650 50  0000 L CNN
+F 1 "24p" H 10125 5450 50  0000 L CNN
+F 2 "" H 10138 5400 50  0001 C CNN
+F 3 "" H 10100 5550 50  0001 C CNN
+	1    10100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 59998E01
+P 9350 5550
+F 0 "C3" H 9375 5650 50  0000 L CNN
+F 1 "24p" H 9375 5450 50  0000 L CNN
+F 2 "" H 9388 5400 50  0001 C CNN
+F 3 "" H 9350 5550 50  0001 C CNN
+	1    9350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5700 9350 5800
+Wire Wire Line
+	9350 5800 10100 5800
+Wire Wire Line
+	10100 5800 10100 5700
+Wire Wire Line
+	9700 5800 9700 5950
+Connection ~ 9700 5800
+Text Label 9700 5950 0    60   ~ 0
+GND
+Connection ~ 9350 5150
+Connection ~ 10100 5150
+Text Notes 11850 5600 0    60   ~ 0
+Crystal Oscillator design process:\n\nFor the values used http://www.ti.com/lit/an/szza043/szza043.pdf page 13\n180k should be approx equal to capacitave reactance of one of the capacitors\n connected to gound. Used 1/j*2pi*f*C where f is the resonant freq of the \ncrystal.\n2.2M should be between 1M and 10M so I just used the one they used in the\nexample.\nThe two caps going to ground should be double the load cap of the crystal\nCrystal load cap found here http://www.farnell.com/datasheets/1912628.pdf\n\nHow to wire up the SN74LVC1GX04 here: http://www.ti.com/lit/ds/symlink/sn74lvc1gx04.pdf\n(page 12)\n\nUsing X2 as output not Y since Y is buffered output which is less stable\nsource: http://www.ti.com/lit/an/szza043/szza043.pdf (page 6)
+Text Label 9950 4700 0    60   ~ 0
+MCLK
+NoConn ~ 8100 4650
+Text Label 2050 5650 0    60   ~ 0
+MCLK
+Text Label 2550 5650 0    60   ~ 0
+SCLK
+Text Label 2050 5750 0    60   ~ 0
+DIN
+Text Label 2550 5750 0    60   ~ 0
+DOUT
+Wire Wire Line
+	2250 5650 2050 5650
+Wire Wire Line
+	2250 5750 2050 5750
+Wire Wire Line
+	2550 5650 2550 5650
+Wire Wire Line
+	2550 5750 2550 5750
+Text Notes 1750 1000 0    60   ~ 0
+Power Supply
+Wire Notes Line
+	1500 850  1500 1900
+Wire Notes Line
+	1500 1900 4850 1900
+Wire Notes Line
+	4850 1900 4850 850 
+Wire Notes Line
+	4850 850  1500 850 
+Text Notes 1750 2500 0    60   ~ 0
+USB Interface
+Wire Notes Line
+	1500 2400 1500 3500
+Wire Notes Line
+	1500 3500 3600 3500
+Wire Notes Line
+	3600 3500 3600 2400
+Wire Notes Line
+	3600 2400 1500 2400
+Text Notes 1750 3900 0    60   ~ 0
+Serial Wire Debugging
+Wire Notes Line
+	1500 3800 1500 4700
+Wire Notes Line
+	1500 4700 3600 4700
+Wire Notes Line
+	3600 4700 3600 3800
+Wire Notes Line
+	3600 3800 1500 3800
+Text Notes 1750 5250 0    60   ~ 0
+Module Bridge
+Wire Notes Line
+	1500 5150 1500 5950
+Wire Notes Line
+	1500 5950 3650 5950
+Wire Notes Line
+	3650 5950 3650 5150
+Wire Notes Line
+	3650 5150 1500 5150
+Text Notes 7650 1000 0    60   ~ 0
+MCU
+Wire Notes Line
+	7350 900  7350 2700
+Wire Notes Line
+	7350 2700 10850 2700
+Wire Notes Line
+	10850 2700 10850 900 
+Wire Notes Line
+	10850 900  7350 900 
+Text Notes 3700 3050 0    60   ~ 0
+Chose 22ohm because:\nhttp://www.eevblog.com/forum/projects/why-usb-data-series-resistors/
+Text Notes 10250 2000 0    60   ~ 0
+I'm using the SPI pins even though the pressure sesnsor doesn't say it uses SPI\nbut it should be the same concepts right?\nEven if we can't hack SPI into working these pins are still general purpose IO so\ni think it's ok?
 $EndSCHEMATC
