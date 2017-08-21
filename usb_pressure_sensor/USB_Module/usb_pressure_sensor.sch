@@ -45,18 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L STM32F0xxFxPx IC1
-U 1 1 5990B64E
-P 9150 1850
-F 0 "IC1" H 8650 2550 50  0000 L CNN
-F 1 "STM32F042F6P6" H 8650 1150 50  0000 L CNN
-F 2 "agg:TSSOP-20" H 8650 1050 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 8650 950 50  0001 L CNN
-F 4 "2469549" H 8650 850 50  0001 L CNN "Farnell"
-	1    9150 1850
-	1    0    0    -1  
-$EndComp
 Text Label 8300 1250 0    60   ~ 0
 3v3
 Text Label 8300 1350 0    60   ~ 0
@@ -65,11 +53,6 @@ Text Label 8300 1450 0    60   ~ 0
 GND
 Text Label 8300 1650 0    60   ~ 0
 NRST
-NoConn ~ 9750 1250
-NoConn ~ 9750 1350
-NoConn ~ 9750 1450
-NoConn ~ 9750 1550
-NoConn ~ 9750 1650
 Text Label 9800 2350 0    60   ~ 0
 SWDIO
 Text Label 9800 2450 0    60   ~ 0
@@ -84,9 +67,6 @@ Text Label 9800 1850 0    60   ~ 0
 DOUT
 Text Label 9800 1950 0    60   ~ 0
 DIN
-NoConn ~ 8550 2150
-NoConn ~ 8550 2250
-NoConn ~ 8550 1850
 $Comp
 L SWD_TC P1
 U 1 1 59920B13
@@ -484,4 +464,127 @@ Text Notes 3700 3050 0    60   ~ 0
 Chose 22ohm because:\nhttp://www.eevblog.com/forum/projects/why-usb-data-series-resistors/
 Text Notes 10250 2000 0    60   ~ 0
 I'm using the SPI pins even though the pressure sesnsor doesn't say it uses SPI\nbut it should be the same concepts right?\nEven if we can't hack SPI into working these pins are still general purpose IO so\ni think it's ok?
+$Comp
+L STM32F0xxFxPx IC1
+U 1 1 5990B64E
+P 9150 1850
+F 0 "IC1" H 8650 2550 50  0000 L CNN
+F 1 "STM32F042F6P6" H 8650 1150 50  0000 L CNN
+F 2 "agg:TSSOP-20" H 8650 1050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 8650 950 50  0001 L CNN
+F 4 "2469549" H 8650 850 50  0001 L CNN "Farnell"
+	1    9150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1850 8550 1850
+Wire Wire Line
+	8550 2150 8400 2150
+Wire Wire Line
+	8550 2250 8400 2250
+Wire Wire Line
+	9750 1250 9800 1250
+Wire Wire Line
+	9750 1350 9800 1350
+Wire Wire Line
+	9750 1450 9800 1450
+Wire Wire Line
+	9750 1550 9800 1550
+Wire Wire Line
+	9750 1650 9800 1650
+Text Label 8300 1850 0    60   ~ 0
+PB1
+Text Label 8400 2150 0    60   ~ 0
+PF0
+Text Label 8400 2250 0    60   ~ 0
+PF1
+Text Label 9800 1250 0    60   ~ 0
+PA0
+Text Label 9800 1350 0    60   ~ 0
+PA1
+Text Label 9800 1450 0    60   ~ 0
+PA2
+Text Label 9800 1550 0    60   ~ 0
+PA3
+Text Label 9800 1650 0    60   ~ 0
+PA4
+Wire Notes Line
+	1500 6200 1500 7500
+Wire Notes Line
+	1500 7500 3650 7500
+Wire Notes Line
+	3650 7500 3650 6200
+Wire Notes Line
+	3650 6200 1500 6200
+$Comp
+L CONN_02x09 J?
+U 1 1 599B5AC0
+P 2450 6400
+F 0 "J?" H 2350 6500 50  0000 L CNN
+F 1 "CONN_02x09" H 2350 5500 50  0000 L CNN
+F 2 "" H 2450 6400 50  0001 C CNN
+F 3 "" H 2450 6400 50  0001 C CNN
+	1    2450 6400
+	1    0    0    -1  
+$EndComp
+Text Notes 3050 6350 0    60   ~ 0
+MCU PINOUT
+Wire Wire Line
+	2100 6400 2250 6400
+Wire Wire Line
+	2100 6500 2250 6500
+Wire Wire Line
+	2250 6600 2100 6600
+Wire Wire Line
+	2100 6700 2250 6700
+Wire Wire Line
+	2250 6800 2100 6800
+Wire Wire Line
+	2100 6900 2250 6900
+Wire Wire Line
+	2250 7000 2100 7000
+Wire Wire Line
+	2100 7100 2250 7100
+Wire Wire Line
+	2250 7200 2100 7200
+Text Label 2100 6400 0    60   ~ 0
+3v3
+Text Label 2550 6400 0    60   ~ 0
+GND
+Text Label 2100 6500 0    60   ~ 0
+PA0
+Text Label 2100 6600 0    60   ~ 0
+PA1
+Text Label 2100 6700 0    60   ~ 0
+PA2
+Text Label 2100 6800 0    60   ~ 0
+PA3
+Text Label 2100 6900 0    60   ~ 0
+PA4
+Text Label 2100 7000 0    60   ~ 0
+SCLK
+Text Label 2100 7100 0    60   ~ 0
+DOUT
+Text Label 2100 7200 0    60   ~ 0
+DIN
+Text Label 2550 6500 0    60   ~ 0
+USB_DM
+Text Label 2550 6600 0    60   ~ 0
+USB_DP
+Text Label 2550 6700 0    60   ~ 0
+SWDIO
+Text Label 2550 6800 0    60   ~ 0
+SWDCLK
+Text Label 2550 6900 0    60   ~ 0
+PB1
+Text Label 8250 1950 0    60   ~ 0
+PB8
+Text Label 2550 7000 0    60   ~ 0
+PB8
+Text Label 2550 7100 0    60   ~ 0
+PF0
+Text Label 2550 7200 0    60   ~ 0
+PF1
+Text Notes 3700 6750 0    60   ~ 0
+We should provide a pinout header so that we could reuse this board \nfor other purposes in the future. If these headers are not needed, they\ncan simply be left unsoldered. This will, however, make the board \nslightly larger due to the length of the 2x9 header and the more \ncomplex routes\n
 $EndSCHEMATC
