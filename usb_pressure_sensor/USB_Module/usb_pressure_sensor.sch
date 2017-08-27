@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:usb_pressure_sensor-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -145,17 +146,6 @@ Text Label 2050 5550 0    60   ~ 0
 Text Label 2550 5550 0    60   ~ 0
 GND
 $Comp
-L SWITCH_SPST SW1
-U 1 1 599811CC
-P 7900 1950
-F 0 "SW1" H 7900 2100 50  0000 C CNN
-F 1 "SWITCH_SPST" H 7900 1850 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7900 1950 50  0001 C CNN
-F 3 "" H 7900 1950 50  0001 C CNN
-	1    7900 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R3
 U 1 1 59981239
 P 8250 2250
@@ -168,7 +158,7 @@ F 3 "" H 8250 2250 50  0001 C CNN
 $EndComp
 Text Label 8250 2550 0    60   ~ 0
 GND
-Text Label 7550 1950 0    60   ~ 0
+Text Label 7300 1850 2    60   ~ 0
 3v3
 $Comp
 L MCP1700 IC2
@@ -247,14 +237,12 @@ Wire Wire Line
 Wire Wire Line
 	2250 5550 2050 5550
 Wire Wire Line
-	8000 1950 8550 1950
+	7950 1950 8550 1950
 Wire Wire Line
 	8250 1950 8250 2100
 Connection ~ 8250 1950
 Wire Wire Line
 	8250 2400 8250 2550
-Wire Wire Line
-	7800 1950 7550 1950
 Wire Wire Line
 	3050 1250 3350 1250
 Wire Wire Line
@@ -277,17 +265,6 @@ Wire Wire Line
 	2400 2850 2750 2850
 Text Label 2750 2850 0    60   ~ 0
 5v
-$Comp
-L SN74LVC1GX04 U2
-U 1 1 599960D4
-P 8500 4600
-F 0 "U2" H 8350 4800 60  0000 C CNN
-F 1 "SN74LVC1GX04" H 8650 4400 60  0000 C CNN
-F 2 "agg:SOT-23-6" H 8500 4500 60  0001 C CNN
-F 3 "" H 8500 4500 60  0001 C CNN
-	1    8500 4600
-	1    0    0    -1  
-$EndComp
 Text Label 8100 4550 0    60   ~ 0
 3v3
 Text Label 8900 4500 0    60   ~ 0
@@ -319,7 +296,7 @@ U 1 1 599981DE
 P 9750 4800
 F 0 "R4" V 9830 4800 50  0000 C CNN
 F 1 "2.2M" V 9750 4800 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9680 4800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 9680 4800 50  0001 C CNN
 F 3 "" H 9750 4800 50  0001 C CNN
 	1    9750 4800
 	0    1    1    0   
@@ -330,7 +307,7 @@ U 1 1 59998242
 P 10100 4950
 F 0 "R5" V 10180 4950 50  0000 C CNN
 F 1 "180k" V 10100 4950 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10030 4950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 10030 4950 50  0001 C CNN
 F 3 "" H 10100 4950 50  0001 C CNN
 	1    10100 4950
 	1    0    0    -1  
@@ -453,13 +430,11 @@ Wire Notes Line
 Text Notes 7650 1000 0    60   ~ 0
 MCU
 Wire Notes Line
-	7350 900  7350 2700
-Wire Notes Line
-	7350 2700 10850 2700
+	7100 2700 10850 2700
 Wire Notes Line
 	10850 2700 10850 900 
 Wire Notes Line
-	10850 900  7350 900 
+	10850 900  7100 900 
 Text Notes 3700 3050 0    60   ~ 0
 Chose 22ohm because:\nhttp://www.eevblog.com/forum/projects/why-usb-data-series-resistors/
 Text Notes 10250 2000 0    60   ~ 0
@@ -587,4 +562,30 @@ Text Label 2550 7200 0    60   ~ 0
 PF1
 Text Notes 3700 6750 0    60   ~ 0
 We should provide a pinout header so that we could reuse this board \nfor other purposes in the future. If these headers are not needed, they\ncan simply be left unsoldered. This will, however, make the board \nslightly larger due to the length of the 2x9 header and the more \ncomplex routes\n
+$Comp
+L SN74LVC1GX04 U2
+U 1 1 59A196E1
+P 8500 4600
+F 0 "U2" H 8350 4800 60  0000 C CNN
+F 1 "SN74LVC1GX04" H 8650 4400 60  0000 C CNN
+F 2 "agg:SOT-23-6" H 8500 4500 60  0001 C CNN
+F 3 "" H 8500 4500 60  0001 C CNN
+	1    8500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L KSC341J:SWITCH U3
+U 1 1 59A1C27B
+P 7650 1900
+F 0 "U3" H 7550 2050 60  0000 C CNN
+F 1 "KSC341J:SWITCH" H 7850 1750 60  0000 C CNN
+F 2 "footprints:KSC431J_SWITCH" H 7650 1900 60  0001 C CNN
+F 3 "" H 7650 1900 60  0001 C CNN
+	1    7650 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7950 1850
+NoConn ~ 7300 1950
+Wire Notes Line
+	7100 900  7100 2700
 $EndSCHEMATC
