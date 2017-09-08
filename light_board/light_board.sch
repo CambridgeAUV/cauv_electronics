@@ -131,32 +131,6 @@ F 3 "" H 4950 2800 50  0001 C CNN
 	1    4950 2800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5200 3800 5000 3800
-Wire Wire Line
-	5000 3800 5000 4000
-Wire Wire Line
-	5200 3900 5000 3900
-Connection ~ 5000 3900
-Wire Wire Line
-	5200 3500 4250 3500
-Wire Wire Line
-	4700 3750 4700 3500
-Connection ~ 4700 3500
-Wire Wire Line
-	4400 3750 4400 3400
-Wire Wire Line
-	3850 3400 5200 3400
-Wire Wire Line
-	3850 3500 3950 3500
-Connection ~ 4400 3400
-Wire Wire Line
-	5100 2800 5200 2800
-Wire Wire Line
-	4700 2900 5200 2900
-Wire Wire Line
-	4800 2800 4800 2900
-Connection ~ 4800 2900
 Text Label 5200 3100 2    60   ~ 0
 COFF
 Text Label 5200 3200 2    60   ~ 0
@@ -202,14 +176,6 @@ F 3 "" H 7700 2500 50  0001 C CNN
 $EndComp
 Text Label 8250 3050 0    60   ~ 0
 VIN
-Wire Wire Line
-	7700 2500 7850 2500
-Wire Wire Line
-	8250 2900 8250 3150
-Wire Wire Line
-	8150 2500 8250 2500
-Wire Wire Line
-	8250 2500 8250 2600
 Text Label 7350 4450 2    60   ~ 0
 COFF
 Text Label 7750 4050 2    60   ~ 0
@@ -273,17 +239,6 @@ F 3 "" H 8650 4850 50  0001 C CNN
 	1    8650 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8050 4450 8650 4450
-Wire Wire Line
-	8250 4250 8250 4650
-Connection ~ 8250 4450
-Wire Wire Line
-	8650 4700 8650 4850
-Wire Wire Line
-	8650 4450 8650 4600
-Wire Wire Line
-	7350 4450 7750 4450
 $Comp
 L GND #PWR06
 U 1 1 58D55663
@@ -295,13 +250,6 @@ F 3 "" H 7550 4950 50  0001 C CNN
 	1    7550 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 4950 7550 4850
-Wire Wire Line
-	7550 4450 7550 4550
-Connection ~ 7550 4450
-Wire Wire Line
-	8250 4950 8250 5400
 $Comp
 L R R6
 U 1 1 58D55809
@@ -313,11 +261,6 @@ F 3 "" H 8250 3300 50  0001 C CNN
 	1    8250 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8250 3650 8250 3450
-Wire Wire Line
-	8000 3550 8250 3550
-Connection ~ 8250 3550
 $Comp
 L CP C4
 U 1 1 58D559B3
@@ -340,9 +283,6 @@ F 3 "" H 8750 3500 50  0001 C CNN
 	1    8750 3500
 	1    0    0    -1  
 $EndComp
-Connection ~ 8250 3050
-Wire Wire Line
-	8000 3050 9100 3050
 $Comp
 L CP C1
 U 1 1 58D5656D
@@ -365,8 +305,6 @@ F 3 "" H 7675 5500 50  0001 C CNN
 	1    7700 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8250 5400 7900 5400
 $Comp
 L R R2
 U 1 1 58D53F94
@@ -378,10 +316,6 @@ F 3 "" H 4400 3900 50  0001 C CNN
 	1    4400 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 4050 4400 4100
-Wire Wire Line
-	4700 4100 4700 4050
 $Comp
 L GND #PWR08
 U 1 1 58D57599
@@ -393,8 +327,6 @@ F 3 "" H 8150 5600 50  0001 C CNN
 	1    8150 5600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7900 5600 8150 5600
 $Comp
 L FDC658AP Q1
 U 1 1 58D5564B
@@ -411,6 +343,87 @@ F 8 "TSOT-23-6 Fairchild Semiconductor" H 8150 3950 50  0001 L CNN "Package"
 	1    8150 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Screw_Terminal_1x02 J3
+U 1 1 58D57063
+P 9300 3150
+F 0 "J3" H 9300 3400 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 9150 3150 50  0000 C TNN
+F 2 "footprints:POWER_CONN" H 9300 2925 50  0001 C CNN
+F 3 "" H 9275 3150 50  0001 C CNN
+	1    9300 3150
+	-1   0    0    1   
+$EndComp
+Text Notes 9250 4100 0    60   ~ 0
+I think this transistor should be put in the other way around\nI.e. Pgate still connected to the gate pin (G) but source (S) \nbeing on top and drain (D) being on the bottom. This is the\nway that the transistor is installed in the datasheet. \nhttp://www.ti.com/lit/ds/snvs602l/snvs602l.pdf
+Wire Wire Line
+	5200 3800 5000 3800
+Wire Wire Line
+	5000 3800 5000 4000
+Wire Wire Line
+	5200 3900 5000 3900
+Connection ~ 5000 3900
+Wire Wire Line
+	5200 3500 4250 3500
+Wire Wire Line
+	4700 3750 4700 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	4400 3750 4400 3400
+Wire Wire Line
+	3850 3400 5200 3400
+Wire Wire Line
+	3850 3500 3950 3500
+Connection ~ 4400 3400
+Wire Wire Line
+	5100 2800 5200 2800
+Wire Wire Line
+	4700 2900 5200 2900
+Wire Wire Line
+	4800 2800 4800 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	7700 2500 7850 2500
+Wire Wire Line
+	8250 2900 8250 3150
+Wire Wire Line
+	8150 2500 8250 2500
+Wire Wire Line
+	8250 2500 8250 2600
+Wire Wire Line
+	8050 4450 8650 4450
+Wire Wire Line
+	8250 4250 8250 4650
+Connection ~ 8250 4450
+Wire Wire Line
+	8650 4700 8650 4850
+Wire Wire Line
+	8650 4450 8650 4600
+Wire Wire Line
+	7350 4450 7750 4450
+Wire Wire Line
+	7550 4950 7550 4850
+Wire Wire Line
+	7550 4450 7550 4550
+Connection ~ 7550 4450
+Wire Wire Line
+	8250 4950 8250 5400
+Wire Wire Line
+	8250 3650 8250 3450
+Wire Wire Line
+	8000 3550 8250 3550
+Connection ~ 8250 3550
+Connection ~ 8250 3050
+Wire Wire Line
+	8000 3050 9100 3050
+Wire Wire Line
+	8250 5400 7900 5400
+Wire Wire Line
+	4400 4050 4400 4100
+Wire Wire Line
+	4700 4100 4700 4050
+Wire Wire Line
+	7900 5600 8150 5600
 Wire Wire Line
 	7950 4050 7750 4050
 Wire Wire Line
@@ -427,21 +440,20 @@ Wire Notes Line
 	9500 2100 9500 2350
 Wire Wire Line
 	8750 3050 8750 3100
-$Comp
-L Screw_Terminal_1x02 J3
-U 1 1 58D57063
-P 9300 3150
-F 0 "J3" H 9300 3400 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 9150 3150 50  0000 C TNN
-F 2 "footprints:POWER_CONN" H 9300 2925 50  0001 C CNN
-F 3 "" H 9275 3150 50  0001 C CNN
-	1    9300 3150
-	-1   0    0    1   
-$EndComp
 Connection ~ 8750 3050
 Wire Wire Line
 	9100 3250 9100 3450
 Wire Wire Line
 	9100 3450 8750 3450
 Connection ~ 8750 3450
+Wire Notes Line
+	8350 3900 9200 3900
+Text Notes 8550 5500 0    60   ~ 0
+I think R3 should be connected to the other side of L1.\ni.e. following the blue dotted line\nAgain this is from looking at the led driver datasheet\nhttp://www.ti.com/lit/ds/snvs602l/snvs602l.pdf
+Wire Notes Line
+	8100 4450 8100 5100
+Wire Notes Line
+	8100 5100 8250 5100
+Text Notes 5000 1900 0    60   ~ 0
+We want to recalculate/verify all of the resistor/capacitor values on\nthis schematic since originally these were taken from the previous\nCAUV's lightboard. When you make a decision on a value please\ndocument the process that you used to arrive at that value so others\ncan verify it.
 $EndSCHEMATC
