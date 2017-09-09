@@ -204,79 +204,12 @@ Text Label 1700 1250 0    60   ~ 0
 5v
 Text Label 3350 1250 0    60   ~ 0
 3v3
-Wire Wire Line
-	8300 1450 8550 1450
-Wire Wire Line
-	8550 1250 8300 1250
-Wire Wire Line
-	8550 1350 8300 1350
-Wire Wire Line
-	8550 1650 8300 1650
-Wire Wire Line
-	9750 1750 9800 1750
-Wire Wire Line
-	9750 1850 9800 1850
-Wire Wire Line
-	9750 1950 9800 1950
-Wire Wire Line
-	9750 2350 9800 2350
-Wire Wire Line
-	9750 2450 9800 2450
-Wire Wire Line
-	9750 2150 9800 2150
-Wire Wire Line
-	9750 2250 9800 2250
-Wire Wire Line
-	2400 3300 2650 3300
-Wire Wire Line
-	2700 3000 2750 3000
-Wire Wire Line
-	2700 3100 2750 3100
-Wire Wire Line
-	2550 5550 2550 5550
-Wire Wire Line
-	2250 5550 2050 5550
-Wire Wire Line
-	7950 1950 8550 1950
-Wire Wire Line
-	8250 1950 8250 2100
-Connection ~ 8250 1950
-Wire Wire Line
-	8250 2400 8250 2550
-Wire Wire Line
-	3050 1250 3350 1250
-Wire Wire Line
-	3150 1250 3150 1300
-Wire Wire Line
-	3150 1600 3150 1750
-Wire Wire Line
-	2350 1350 2350 1600
-Wire Wire Line
-	1700 1250 2350 1250
-Wire Wire Line
-	2100 1550 2100 1600
-Wire Wire Line
-	2100 1600 2350 1600
-Connection ~ 2100 1250
-Connection ~ 3150 1250
-Wire Wire Line
-	2400 2900 2400 2850
-Wire Wire Line
-	2400 2850 2750 2850
 Text Label 2750 2850 0    60   ~ 0
 5v
 Text Label 8100 4550 0    60   ~ 0
 3v3
 Text Label 8900 4500 0    60   ~ 0
 GND
-Wire Notes Line
-	11200 6200 7250 6200
-Wire Notes Line
-	7250 6200 7250 3750
-Wire Notes Line
-	7250 3750 11200 3750
-Wire Notes Line
-	11200 3750 11200 6200
 Text Notes 7450 3900 0    60   ~ 0
 Crystal Oscillator
 $Comp
@@ -312,25 +245,6 @@ F 3 "" H 10100 4950 50  0001 C CNN
 	1    10100 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 5150 10100 5150
-Wire Wire Line
-	10100 5100 10100 5400
-Wire Wire Line
-	9900 4800 10100 4800
-Wire Wire Line
-	9600 4800 9350 4800
-Wire Wire Line
-	9350 4600 9350 5400
-Wire Wire Line
-	9350 5150 9600 5150
-Wire Wire Line
-	8900 4600 9350 4600
-Connection ~ 9350 4800
-Wire Wire Line
-	8900 4700 10100 4700
-Wire Wire Line
-	10100 4700 10100 4800
 $Comp
 L C C4
 U 1 1 59998D9B
@@ -353,19 +267,8 @@ F 3 "" H 9350 5550 50  0001 C CNN
 	1    9350 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9350 5700 9350 5800
-Wire Wire Line
-	9350 5800 10100 5800
-Wire Wire Line
-	10100 5800 10100 5700
-Wire Wire Line
-	9700 5800 9700 5950
-Connection ~ 9700 5800
 Text Label 9700 5950 0    60   ~ 0
 GND
-Connection ~ 9350 5150
-Connection ~ 10100 5150
 Text Notes 11850 5600 0    60   ~ 0
 Crystal Oscillator design process:\n\nFor the values used http://www.ti.com/lit/an/szza043/szza043.pdf page 13\n180k should be approx equal to capacitave reactance of one of the capacitors\n connected to gound. Used 1/j*2pi*f*C where f is the resonant freq of the \ncrystal.\n2.2M should be between 1M and 10M so I just used the one they used in the\nexample.\nThe two caps going to ground should be double the load cap of the crystal\nCrystal load cap found here http://www.farnell.com/datasheets/1912628.pdf\n\nHow to wire up the SN74LVC1GX04 here: http://www.ti.com/lit/ds/symlink/sn74lvc1gx04.pdf\n(page 12)\n\nUsing X2 as output not Y since Y is buffered output which is less stable\nsource: http://www.ti.com/lit/an/szza043/szza043.pdf (page 6)
 Text Label 9950 4700 0    60   ~ 0
@@ -379,62 +282,16 @@ Text Label 2050 5750 0    60   ~ 0
 DIN
 Text Label 2550 5750 0    60   ~ 0
 DOUT
-Wire Wire Line
-	2250 5650 2050 5650
-Wire Wire Line
-	2250 5750 2050 5750
-Wire Wire Line
-	2550 5650 2550 5650
-Wire Wire Line
-	2550 5750 2550 5750
 Text Notes 1750 1000 0    60   ~ 0
 Power Supply
-Wire Notes Line
-	1500 850  1500 1900
-Wire Notes Line
-	1500 1900 4850 1900
-Wire Notes Line
-	4850 1900 4850 850 
-Wire Notes Line
-	4850 850  1500 850 
 Text Notes 1750 2500 0    60   ~ 0
 USB Interface
-Wire Notes Line
-	1500 2400 1500 3500
-Wire Notes Line
-	1500 3500 3600 3500
-Wire Notes Line
-	3600 3500 3600 2400
-Wire Notes Line
-	3600 2400 1500 2400
 Text Notes 1750 3900 0    60   ~ 0
 Serial Wire Debugging
-Wire Notes Line
-	1500 3800 1500 4700
-Wire Notes Line
-	1500 4700 3600 4700
-Wire Notes Line
-	3600 4700 3600 3800
-Wire Notes Line
-	3600 3800 1500 3800
 Text Notes 1750 5250 0    60   ~ 0
 Module Bridge
-Wire Notes Line
-	1500 5150 1500 5950
-Wire Notes Line
-	1500 5950 3650 5950
-Wire Notes Line
-	3650 5950 3650 5150
-Wire Notes Line
-	3650 5150 1500 5150
 Text Notes 7650 1000 0    60   ~ 0
 MCU
-Wire Notes Line
-	7100 2700 10850 2700
-Wire Notes Line
-	10850 2700 10850 900 
-Wire Notes Line
-	10850 900  7100 900 
 Text Notes 3700 3050 0    60   ~ 0
 Chose 22ohm because:\nhttp://www.eevblog.com/forum/projects/why-usb-data-series-resistors/
 Text Notes 10250 2000 0    60   ~ 0
@@ -451,22 +308,6 @@ F 4 "2469549" H 8650 850 50  0001 L CNN "Farnell"
 	1    9150 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 1850 8550 1850
-Wire Wire Line
-	8550 2150 8400 2150
-Wire Wire Line
-	8550 2250 8400 2250
-Wire Wire Line
-	9750 1250 9800 1250
-Wire Wire Line
-	9750 1350 9800 1350
-Wire Wire Line
-	9750 1450 9800 1450
-Wire Wire Line
-	9750 1550 9800 1550
-Wire Wire Line
-	9750 1650 9800 1650
 Text Label 8300 1850 0    60   ~ 0
 PB1
 Text Label 8400 2150 0    60   ~ 0
@@ -483,14 +324,6 @@ Text Label 9800 1550 0    60   ~ 0
 PA3
 Text Label 9800 1650 0    60   ~ 0
 PA4
-Wire Notes Line
-	1500 6200 1500 7500
-Wire Notes Line
-	1500 7500 3650 7500
-Wire Notes Line
-	3650 7500 3650 6200
-Wire Notes Line
-	3650 6200 1500 6200
 $Comp
 L CONN_02x09 J1
 U 1 1 599B5AC0
@@ -504,24 +337,6 @@ F 3 "" H 2450 6400 50  0001 C CNN
 $EndComp
 Text Notes 3050 6350 0    60   ~ 0
 MCU PINOUT
-Wire Wire Line
-	2100 6400 2250 6400
-Wire Wire Line
-	2100 6500 2250 6500
-Wire Wire Line
-	2250 6600 2100 6600
-Wire Wire Line
-	2100 6700 2250 6700
-Wire Wire Line
-	2250 6800 2100 6800
-Wire Wire Line
-	2100 6900 2250 6900
-Wire Wire Line
-	2250 7000 2100 7000
-Wire Wire Line
-	2100 7100 2250 7100
-Wire Wire Line
-	2250 7200 2100 7200
 Text Label 2100 6400 0    60   ~ 0
 3v3
 Text Label 2550 6400 0    60   ~ 0
@@ -586,6 +401,255 @@ F 3 "" H 7650 1900 60  0001 C CNN
 $EndComp
 NoConn ~ 7950 1850
 NoConn ~ 7300 1950
+Text Notes 3450 8550 0    60   ~ 0
+LED type we already have: LGR971 green
+$Comp
+L LED D1
+U 1 1 59B40BCD
+P 10400 1250
+F 0 "D1" H 10400 1350 50  0000 C CNN
+F 1 "LED" H 10400 1150 50  0000 C CNN
+F 2 "" H 10400 1250 50  0001 C CNN
+F 3 "" H 10400 1250 50  0001 C CNN
+	1    10400 1250
+	-1   0    0    1   
+$EndComp
+Text Label 10650 1250 0    60   ~ 0
+GND
+Text Notes 9350 150  0    60   ~ 0
+LED Design Process:\nPA0 is a TTa pin (from datasheet) which is 3.3V.\nLED is type LGR971 which has forward voltage drop of 2.2V\nLED requires 25mA so resistor value is (1.1)/0.025 = 44 ohms\nNearest lower value we have is 39 ohm 0603
+$Comp
+L R R6
+U 1 1 59B42B89
+P 10100 1250
+F 0 "R6" V 10180 1250 50  0000 C CNN
+F 1 "R" V 10100 1250 50  0000 C CNN
+F 2 "" V 10030 1250 50  0001 C CNN
+F 3 "" H 10100 1250 50  0001 C CNN
+	1    10100 1250
+	0    1    1    0   
+$EndComp
+Text Notes 3450 3500 0    60   ~ 0
+For the LED, just copied this http://www.instructables.com/id/Simple-USB-Tester/\nI really don't know how to correctly choose the resistor value since I don't\nknow how much the Data pins can sink so i'll just stick with the instrucbles value of 1k\n
+Text Notes 3400 3700 0    60   ~ 0
+I'm also not sure whether it should go before or after the termination \nresistors\n
+Wire Wire Line
+	8300 1450 8550 1450
+Wire Wire Line
+	8550 1250 8300 1250
+Wire Wire Line
+	8550 1350 8300 1350
+Wire Wire Line
+	8550 1650 8300 1650
+Wire Wire Line
+	9750 1750 9800 1750
+Wire Wire Line
+	9750 1850 9800 1850
+Wire Wire Line
+	9750 1950 9800 1950
+Wire Wire Line
+	9750 2350 9800 2350
+Wire Wire Line
+	9750 2450 9800 2450
+Wire Wire Line
+	9750 2150 9800 2150
+Wire Wire Line
+	9750 2250 9800 2250
+Wire Wire Line
+	2400 3300 2650 3300
+Wire Wire Line
+	2700 3000 2750 3000
+Wire Wire Line
+	2700 3100 2750 3100
+Wire Wire Line
+	2550 5550 2550 5550
+Wire Wire Line
+	2250 5550 2050 5550
+Wire Wire Line
+	7950 1950 8550 1950
+Wire Wire Line
+	8250 1950 8250 2100
+Connection ~ 8250 1950
+Wire Wire Line
+	8250 2400 8250 2550
+Wire Wire Line
+	3050 1250 3350 1250
+Wire Wire Line
+	3150 1250 3150 1300
+Wire Wire Line
+	3150 1600 3150 1750
+Wire Wire Line
+	2350 1350 2350 1600
+Wire Wire Line
+	1700 1250 2350 1250
+Wire Wire Line
+	2100 1550 2100 1600
+Wire Wire Line
+	2100 1600 2350 1600
+Connection ~ 2100 1250
+Connection ~ 3150 1250
+Wire Wire Line
+	2400 2900 2400 2850
+Wire Wire Line
+	2400 2850 3350 2850
+Wire Notes Line
+	11200 6200 7250 6200
+Wire Notes Line
+	7250 6200 7250 3750
+Wire Notes Line
+	7250 3750 11200 3750
+Wire Notes Line
+	11200 3750 11200 6200
+Wire Wire Line
+	9900 5150 10100 5150
+Wire Wire Line
+	10100 5100 10100 5400
+Wire Wire Line
+	9900 4800 10100 4800
+Wire Wire Line
+	9600 4800 9350 4800
+Wire Wire Line
+	9350 4600 9350 5400
+Wire Wire Line
+	9350 5150 9600 5150
+Wire Wire Line
+	8900 4600 9350 4600
+Connection ~ 9350 4800
+Wire Wire Line
+	8900 4700 10100 4700
+Wire Wire Line
+	10100 4700 10100 4800
+Wire Wire Line
+	9350 5700 9350 5800
+Wire Wire Line
+	9350 5800 10100 5800
+Wire Wire Line
+	10100 5800 10100 5700
+Wire Wire Line
+	9700 5800 9700 5950
+Connection ~ 9700 5800
+Connection ~ 9350 5150
+Connection ~ 10100 5150
+Wire Wire Line
+	2250 5650 2050 5650
+Wire Wire Line
+	2250 5750 2050 5750
+Wire Wire Line
+	2550 5650 2550 5650
+Wire Wire Line
+	2550 5750 2550 5750
+Wire Notes Line
+	1500 850  1500 1900
+Wire Notes Line
+	1500 1900 4850 1900
+Wire Notes Line
+	4850 1900 4850 850 
+Wire Notes Line
+	4850 850  1500 850 
+Wire Notes Line
+	1500 2400 1500 3500
+Wire Notes Line
+	1500 3500 3600 3500
+Wire Notes Line
+	3600 3500 3600 2400
+Wire Notes Line
+	3600 2400 1500 2400
+Wire Notes Line
+	1500 3800 1500 4700
+Wire Notes Line
+	1500 4700 3600 4700
+Wire Notes Line
+	3600 4700 3600 3800
+Wire Notes Line
+	3600 3800 1500 3800
+Wire Notes Line
+	1500 5150 1500 5950
+Wire Notes Line
+	1500 5950 3650 5950
+Wire Notes Line
+	3650 5950 3650 5150
+Wire Notes Line
+	3650 5150 1500 5150
+Wire Notes Line
+	7100 2700 10850 2700
+Wire Notes Line
+	10850 2700 10850 900 
+Wire Notes Line
+	10850 900  7100 900 
+Wire Wire Line
+	8300 1850 8550 1850
+Wire Wire Line
+	8550 2150 8400 2150
+Wire Wire Line
+	8550 2250 8400 2250
+Wire Wire Line
+	9750 1250 9950 1250
+Wire Wire Line
+	9750 1350 9800 1350
+Wire Wire Line
+	9750 1450 9800 1450
+Wire Wire Line
+	9750 1550 9800 1550
+Wire Wire Line
+	9750 1650 9800 1650
+Wire Notes Line
+	1500 6200 1500 7500
+Wire Notes Line
+	1500 7500 3650 7500
+Wire Notes Line
+	3650 7500 3650 6200
+Wire Notes Line
+	3650 6200 1500 6200
+Wire Wire Line
+	2100 6400 2250 6400
+Wire Wire Line
+	2100 6500 2250 6500
+Wire Wire Line
+	2250 6600 2100 6600
+Wire Wire Line
+	2100 6700 2250 6700
+Wire Wire Line
+	2250 6800 2100 6800
+Wire Wire Line
+	2100 6900 2250 6900
+Wire Wire Line
+	2250 7000 2100 7000
+Wire Wire Line
+	2100 7100 2250 7100
+Wire Wire Line
+	2250 7200 2100 7200
 Wire Notes Line
 	7100 900  7100 2700
+Wire Wire Line
+	10550 1250 10650 1250
+$Comp
+L LED D2
+U 1 1 59B46843
+P 3200 2600
+F 0 "D2" H 3200 2700 50  0000 C CNN
+F 1 "LED" H 3200 2500 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2600 2750 2600
+Wire Wire Line
+	2350 3100 2400 3100
+$Comp
+L R R7
+U 1 1 59B470D2
+P 2900 2600
+F 0 "R7" V 2980 2600 50  0000 C CNN
+F 1 "1k" V 2900 2600 50  0000 C CNN
+F 2 "" V 2830 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2850 3350 2600
+Wire Wire Line
+	2350 2600 2350 3100
 $EndSCHEMATC
