@@ -299,8 +299,8 @@ L Screw_Terminal_1x02 J2
 U 1 1 58D56F37
 P 7700 5500
 F 0 "J2" H 7700 5750 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 7550 5500 50  0000 C TNN
-F 2 "footprints:POWER_CONN" H 7700 5275 50  0001 C CNN
+F 1 "Led_Connector" V 7550 5500 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Philmore_TB132_02x5mm_Straight" H 7700 5275 50  0001 C CNN
 F 3 "" H 7675 5500 50  0001 C CNN
 	1    7700 5500
 	1    0    0    -1  
@@ -348,8 +348,8 @@ L Screw_Terminal_1x02 J3
 U 1 1 58D57063
 P 9300 3150
 F 0 "J3" H 9300 3400 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 9150 3150 50  0000 C TNN
-F 2 "footprints:POWER_CONN" H 9300 2925 50  0001 C CNN
+F 1 "Power_Connector" V 9150 3150 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 9300 2925 50  0001 C CNN
 F 3 "" H 9275 3150 50  0001 C CNN
 	1    9300 3150
 	-1   0    0    1   
@@ -456,4 +456,8 @@ Wire Notes Line
 	8100 5100 8250 5100
 Text Notes 5000 1900 0    60   ~ 0
 We want to recalculate/verify all of the resistor/capacitor values on\nthis schematic since originally these were taken from the previous\nCAUV's lightboard. When you make a decision on a value please\ndocument the process that you used to arrive at that value so others\ncan verify it.
+Text Notes 8800 4900 0    60   ~ 0
+We have a 15uH SMD inductor already, we need to check\nwhether it has a high enough current rating (2A ish) and \nchange the footprint accordingly.
+Text Notes 4600 4500 0    60   ~ 0
+C1 doesn't need to be electrolytic
 $EndSCHEMATC

@@ -1,19 +1,19 @@
-Cmp-Mod V01 Created by PcbNew   date = Sunday, 25 June 2017 'pmt' 15:28:45
+Cmp-Mod V01 Created by PcbNew   date = Friday, 22 September 2017 'amt' 11:46:51
 
 BeginCmp
-TimeStamp = 58D557F3
-Path = /58D54246
-Reference = C2;
-ValeurCmp = 1uF;
-IdModule  = agg:0805;
+TimeStamp = 58D55905
+Path = /58D56F37
+Reference = J2;
+ValeurCmp = Led_Connector;
+IdModule  = footprints:POWER_CONN;
 EndCmp
 
 BeginCmp
-TimeStamp = 58D55807
-Path = /58D550FA
-Reference = C3;
-ValeurCmp = 1nF;
-IdModule  = agg:0805;
+TimeStamp = 58D67EA7
+Path = /58D57063
+Reference = J3;
+ValeurCmp = Power_Connector;
+IdModule  = footprints:POWER_CONN;
 EndCmp
 
 BeginCmp
@@ -25,67 +25,11 @@ IdModule  = Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 58D55905
-Path = /58D56F37
-Reference = J2;
-ValeurCmp = Screw_Terminal_1x02;
-IdModule  = footprints:POWER_CONN;
-EndCmp
-
-BeginCmp
 TimeStamp = 58D5591B
 Path = /58D55176
 Reference = L1;
 ValeurCmp = 15uH;
 IdModule  = Inductors_THT:L_Axial_L16.0mm_D6.3mm_P25.40mm_Horizontal_Fastron_VHBCC;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D5592F
-Path = /58D53FEE
-Reference = R1;
-ValeurCmp = 1K;
-IdModule  = agg:0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D55943
-Path = /58D53F94
-Reference = R2;
-ValeurCmp = 4.7K;
-IdModule  = agg:0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D55957
-Path = /58D55135
-Reference = R3;
-ValeurCmp = 3K9;
-IdModule  = agg:0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D5596B
-Path = /58D54C6B
-Reference = R4;
-ValeurCmp = 1K8;
-IdModule  = agg:0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D5597F
-Path = /58D54CCF
-Reference = R5;
-ValeurCmp = 15K;
-IdModule  = agg:0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 58D55993
-Path = /58D55809
-Reference = R6;
-ValeurCmp = 0.1R;
-IdModule  = agg:0805;
 EndCmp
 
 BeginCmp
@@ -129,11 +73,67 @@ IdModule  = Diodes_THT:D_T-1_P5.08mm_Horizontal;
 EndCmp
 
 BeginCmp
-TimeStamp = 58D67EA7
-Path = /58D57063
-Reference = J3;
-ValeurCmp = Screw_Terminal_1x02;
-IdModule  = footprints:POWER_CONN;
+TimeStamp = 58D55993
+Path = /58D55809
+Reference = R6;
+ValeurCmp = 0.1R;
+IdModule  = Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D5597F
+Path = /58D54CCF
+Reference = R5;
+ValeurCmp = 15K;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D5596B
+Path = /58D54C6B
+Reference = R4;
+ValeurCmp = 1K8;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D55957
+Path = /58D55135
+Reference = R3;
+ValeurCmp = 3K9;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D55943
+Path = /58D53F94
+Reference = R2;
+ValeurCmp = 4.7K;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D5592F
+Path = /58D53FEE
+Reference = R1;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D55807
+Path = /58D550FA
+Reference = C3;
+ValeurCmp = 1nF;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D557F3
+Path = /58D54246
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
 EndListe
