@@ -77,39 +77,6 @@ $EndComp
 Text Label 5200 3600 2    60   ~ 0
 UVLO
 $Comp
-L R R1
-U 1 1 58D53FEE
-P 4100 3500
-F 0 "R1" V 4180 3500 50  0000 C CNN
-F 1 "1K" V 4100 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4030 3500 50  0001 C CNN
-F 3 "" H 4100 3500 50  0001 C CNN
-	1    4100 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 58D54081
-P 4400 4100
-F 0 "#PWR02" H 4400 3850 50  0001 C CNN
-F 1 "GND" H 4400 3950 50  0000 C CNN
-F 2 "" H 4400 4100 50  0001 C CNN
-F 3 "" H 4400 4100 50  0001 C CNN
-	1    4400 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 58D540A1
-P 4700 4100
-F 0 "#PWR03" H 4700 3850 50  0001 C CNN
-F 1 "GND" H 4700 3950 50  0000 C CNN
-F 2 "" H 4700 4100 50  0001 C CNN
-F 3 "" H 4700 4100 50  0001 C CNN
-	1    4700 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_01X02 J1
 U 1 1 58D54198
 P 3650 3450
@@ -178,7 +145,7 @@ Text Label 8250 3050 0    60   ~ 0
 VIN
 Text Label 7350 4450 2    60   ~ 0
 COFF
-Text Label 7750 4050 2    60   ~ 0
+Text Label 7650 3850 2    60   ~ 0
 PGATE
 Text Label 8000 3550 2    60   ~ 0
 CSN
@@ -284,17 +251,6 @@ F 3 "" H 8750 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
-U 1 1 58D5656D
-P 4700 3900
-F 0 "C1" H 4725 4000 50  0000 L CNN
-F 1 "1uF" H 4725 3800 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D5.0mm_P2.50mm" H 4738 3750 50  0001 C CNN
-F 3 "" H 4700 3900 50  0001 C CNN
-	1    4700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Screw_Terminal_1x02 J2
 U 1 1 58D56F37
 P 7700 5500
@@ -303,17 +259,6 @@ F 1 "Led_Connector" V 7550 5500 50  0000 C TNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Philmore_TB132_02x5mm_Straight" H 7700 5275 50  0001 C CNN
 F 3 "" H 7675 5500 50  0001 C CNN
 	1    7700 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R2
-U 1 1 58D53F94
-P 4400 3900
-F 0 "R2" V 4480 3900 50  0000 C CNN
-F 1 "4.7K" V 4400 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4330 3900 50  0001 C CNN
-F 3 "" H 4400 3900 50  0001 C CNN
-	1    4400 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -341,7 +286,7 @@ F 6 "FDC658AP" H 8150 3950 50  0001 L CNN "MP"
 F 7 "Good" H 8150 3950 50  0001 L CNN "Availability"
 F 8 "TSOT-23-6 Fairchild Semiconductor" H 8150 3950 50  0001 L CNN "Package"
 	1    8150 3950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Screw_Terminal_1x02 J3
@@ -354,8 +299,6 @@ F 3 "" H 9275 3150 50  0001 C CNN
 	1    9300 3150
 	-1   0    0    1   
 $EndComp
-Text Notes 9250 4100 0    60   ~ 0
-I think this transistor should be put in the other way around\nI.e. Pgate still connected to the gate pin (G) but source (S) \nbeing on top and drain (D) being on the bottom. This is the\nway that the transistor is installed in the datasheet. \nhttp://www.ti.com/lit/ds/snvs602l/snvs602l.pdf
 Wire Wire Line
 	5200 3800 5000 3800
 Wire Wire Line
@@ -364,17 +307,9 @@ Wire Wire Line
 	5200 3900 5000 3900
 Connection ~ 5000 3900
 Wire Wire Line
-	5200 3500 4250 3500
-Wire Wire Line
-	4700 3750 4700 3500
-Connection ~ 4700 3500
-Wire Wire Line
-	4400 3750 4400 3400
+	3850 3500 5200 3500
 Wire Wire Line
 	3850 3400 5200 3400
-Wire Wire Line
-	3850 3500 3950 3500
-Connection ~ 4400 3400
 Wire Wire Line
 	5100 2800 5200 2800
 Wire Wire Line
@@ -391,7 +326,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 2500 8250 2600
 Wire Wire Line
-	8050 4450 8650 4450
+	8250 4450 8650 4450
 Wire Wire Line
 	8250 4250 8250 4650
 Connection ~ 8250 4450
@@ -409,7 +344,7 @@ Connection ~ 7550 4450
 Wire Wire Line
 	8250 4950 8250 5400
 Wire Wire Line
-	8250 3650 8250 3450
+	8250 3450 8250 3650
 Wire Wire Line
 	8000 3550 8250 3550
 Connection ~ 8250 3550
@@ -419,15 +354,11 @@ Wire Wire Line
 Wire Wire Line
 	8250 5400 7900 5400
 Wire Wire Line
-	4400 4050 4400 4100
-Wire Wire Line
-	4700 4100 4700 4050
-Wire Wire Line
 	7900 5600 8150 5600
 Wire Wire Line
-	7950 4050 7750 4050
+	7950 3850 7650 3850
 Wire Wire Line
-	8750 3500 8750 3400
+	8750 3400 8750 3500
 Wire Notes Line
 	6900 2100 6900 6050
 Wire Notes Line
@@ -451,8 +382,6 @@ Wire Notes Line
 Text Notes 8550 5500 0    60   ~ 0
 I think R3 should be connected to the other side of L1.\ni.e. following the blue dotted line\nAgain this is from looking at the led driver datasheet\nhttp://www.ti.com/lit/ds/snvs602l/snvs602l.pdf
 Wire Notes Line
-	8100 4450 8100 5100
-Wire Notes Line
 	8100 5100 8250 5100
 Text Notes 5000 1900 0    60   ~ 0
 We want to recalculate/verify all of the resistor/capacitor values on\nthis schematic since originally these were taken from the previous\nCAUV's lightboard. When you make a decision on a value please\ndocument the process that you used to arrive at that value so others\ncan verify it.
@@ -460,4 +389,11 @@ Text Notes 8800 4900 0    60   ~ 0
 We have a 15uH SMD inductor already, we need to check\nwhether it has a high enough current rating (2A ish) and \nchange the footprint accordingly.
 Text Notes 4600 4500 0    60   ~ 0
 C1 doesn't need to be electrolytic
+Wire Wire Line
+	8050 4450 8050 5100
+Wire Wire Line
+	8050 5100 8250 5100
+Connection ~ 8250 5100
+Text Notes 9250 4100 0    60   ~ 0
+pmos has been flipped so that the source is connected to the higher voltage
 $EndSCHEMATC
