@@ -430,7 +430,7 @@ F 3 "" H 10100 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 3450 3500 0    60   ~ 0
-For the LED, just copied this http://www.instructables.com/id/Simple-USB-Tester/\nI really don't know how to correctly choose the resistor value since I don't\nknow how much the Data pins can sink so i'll just stick with the instrucbles value of 1k\n
+[Comment now obsolete]\nFor the LED, just copied this http://www.instructables.com/id/Simple-USB-Tester/\nI really don't know how to correctly choose the resistor value since I don't\nknow how much the Data pins can sink so i'll just stick with the instrucbles value of 1k\n
 Text Notes 3400 3700 0    60   ~ 0
 I'm also not sure whether it should go before or after the termination \nresistors\n
 Wire Wire Line
