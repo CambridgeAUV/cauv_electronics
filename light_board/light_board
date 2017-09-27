@@ -1,0 +1,15 @@
+Reference, Value, Footprint, Datasheet, MF, Description, Price, Package, MP, Availability
+"U1","LM3409MY","footprints:LM3409","Warning","Texas Instruments","Ic Led Drivr High Bright 10-Msop - Lm3409my/Nopb","None","MSOP-10 Texas Instruments","LM3409MY",""
+"J1","CONN_01X02","Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol",""
+"Cf1","1uF","Capacitors_SMD:C_0603",""
+"Ruv1","6K49","Resistors_SMD:R_0603",""
+"Ruv2","73K2","Resistors_SMD:R_0603",""
+"Coff1","470pF","Capacitors_SMD:C_0603",""
+"Roff1","13k","Resistors_SMD:R_0603",""
+"L1","12.5uH","Inductors_THT:L_Axial_L16.0mm_D6.3mm_P25.40mm_Horizontal_Fastron_VHBCC",""
+"D1","SCHOTTKY","Diodes_THT:D_5KPW_P7.62mm_Vertical_AnodeUp",""
+"Rsns1","0.15R","Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P15.24mm_Horizontal",""
+"Cin1","5uF","Capacitors_THT:CP_Radial_Tantal_D5.0mm_P2.50mm",""
+"J2","Led_Connector","Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol",""
+"Q1","FDC658AP","footprints:FDC658APFDC658AP","0.21 USD","Fairchild Semiconductor","P-Channel 30 V 50 mOhm Surface Mount Logic Level PowerTrench Mosfet SSOT-6","","TSOT-23-6 Fairchild Semiconductor","FDC658AP","Good"
+"J3","Power_Connector","Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol",""
