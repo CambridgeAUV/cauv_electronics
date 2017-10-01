@@ -499,4 +499,6 @@ F 3 "" H 6750 3050 50  0001 C CNN
 $EndComp
 Text Label 6750 2900 0    60   ~ 0
 PGATE
+Text Label 8250 3650 0    60   ~ 0
+RsnsToPMOS
 $EndSCHEMATC
